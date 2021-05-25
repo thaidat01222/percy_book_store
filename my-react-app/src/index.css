@@ -1,0 +1,113 @@
+body {
+  width: 1230px;
+  padding: 0 330px 0 330px;
+  background-color: #F0F0F0;
+}
+
+
+.header{
+  background-color: white;
+  padding: 35px 0 15px 0;
+}
+#search{
+  border: 2px solid #4EA3CE  ;
+  width:  670px;;
+  height: 30px;
+  position: relative;
+  bottom: 15px;
+}
+#logo{
+  width: 125px;
+  height: 43px;
+  margin-right: 80px;
+}
+#search-icon{
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 72px;
+}
+#nortify{
+  margin: 0 20px 0 20px;
+  width:  30px;;
+  height: 30px;
+  position: relative;
+  bottom: 5px;
+}
+#shoping-cart{
+  margin: 0 20px 0 20px;
+  width:  30px;;
+  height: 30px;
+  position: relative;
+  bottom: 5px;
+}
+#login{
+  margin: 0 20px 0 20px;
+  width:  30px;;
+  height: 30px;
+  position: relative;
+  bottom: 5px;
+}
+
+.list-type-of-book{
+  width: 300px;
+  font-size: 15px;
+  height: 300px;
+  margin-right: 10px;
+}
+.list-type-of-book p{
+  background-color: #4EA3CE;
+  width: 300px;
+  padding: 7px 0 7px 0 ;
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  position: relative;
+  bottom: -15px;
+  line-height: 30px;
+  color: white;
+  
+}
+.list-type-of-book ul{
+  background-color: white;
+  width: 300px;
+  padding: 0;
+  list-style-type: none ;
+}
+.list-type-of-book ul,li{
+  list-style-type: none;
+  text-align: center;
+  line-height: 40px;
+  position: relative;;
+}
+.list-type-of-book ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+.list-type-of-book ul li:hover {
+  background-color: #7dc6eb;
+}
+.list-type-of-book .sub-menu{
+  position: absolute;
+  left: 300px;
+  top: 0;
+  display: none;
+}
+.list-type-of-book ul li:hover .sub-menu{
+  display: block;
+  z-index: 2;
+}
+.list-type-of-book ul li:hover .sub-menu ul li:hover {
+  background-color: #7ABBDA;
+}
+
+.list-slide{
+  display: flex;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
