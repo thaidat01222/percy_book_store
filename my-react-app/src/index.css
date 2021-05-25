@@ -1,29 +1,33 @@
 body {
-  width: 1230px;
-  padding: 0 330px 0 330px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #F0F0F0;
 }
 
 
 .header{
   background-color: white;
-  padding: 35px 0 15px 0;
+  width: 1220px;
+  height: 43px;
+  margin: 0 auto;  
+  display: flex;
+  align-items: center;
 }
 #search{
   border: 2px solid #4EA3CE  ;
   width:  670px;;
   height: 30px;
-  position: relative;
-  bottom: 15px;
+
 }
 #logo{
   width: 125px;
   height: 43px;
   margin-right: 80px;
 }
+
 #search-icon{
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin-left: 10px;
   margin-right: 72px;
 }
@@ -31,22 +35,17 @@ body {
   margin: 0 20px 0 20px;
   width:  30px;;
   height: 30px;
-  position: relative;
-  bottom: 5px;
 }
 #shoping-cart{
   margin: 0 20px 0 20px;
   width:  30px;;
   height: 30px;
-  position: relative;
-  bottom: 5px;
+
 }
 #login{
   margin: 0 20px 0 20px;
   width:  30px;;
   height: 30px;
-  position: relative;
-  bottom: 5px;
 }
 
 .list-type-of-book{
@@ -110,4 +109,155 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.login {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.login-text {
+  margin: 20px auto;
+  color: #093952;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#user-input {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+
+}
+
+#password-input {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+
+}
+
+.button-login {
+  margin-top: 20px;
+  height: 28px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4EA3CE;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: 18px;
+}
+
+.sign-up-in-here {
+  margin: 20px;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  color: #c71b1b;
+}
+
+.sign-up {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sign-up-text {
+  margin: 20px auto;
+  color: #093952;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#user {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#name {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+
+#age {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 27px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#password {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+
+}
+
+.button-sign-up {
+  margin-top: 20px;
+  height: 28px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4EA3CE;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: 18px;
+}
+
+.sign {
+  margin: 20px;
 }

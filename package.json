@@ -12,5 +12,23 @@
     "path": "^0.12.7",
     "route": "^0.2.5",
     "session": "^0.1.0"
-  }
+  },
+  "name": "percy_book_store",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaidat01222/percy_book_store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaidat01222/percy_book_store/issues"
+  },
+  "homepage": "https://github.com/thaidat01222/percy_book_store#readme",
+  "description": ""
 }

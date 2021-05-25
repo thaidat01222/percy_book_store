@@ -11,15 +11,15 @@ class Login extends Component {
     }
     render() {
         return (
-                    <div>
-                        <div className="login-form">
-                            <h1>ĐĂNG NHẬP</h1>
-                            <input type="username" id="user-input" placeholder="Tên người dùng hoặc địa chỉ email" required></input>
-                            <input type="password" id="password-input" placeholder="Mật khẩu" required></input>
-                            <button>Đăng Nhập</button>
-                        </div>
-                        <div className="sign-up">
-                            <a>Đăng Ký Thành Viên</a>
+                    <div className="sign-up">
+                        <div className="sign-up-form">
+                            <h1 className="sign-up-text">ĐĂNG KÝ</h1>
+                            <input type="username" id="name" placeholder="Họ tên" required/>
+                            <input type="date" id="age" value="2021-01-01"/>
+                            <input type="username" id="user" placeholder="Địa chỉ email" required/>
+                            <input type="password" id="password" placeholder="Mật khẩu" required/>
+                            <input type="password" id="password" placeholder="Nhập lại mật khẩu" required/>
+                            <button className="button-sign-up">Đăng Ký</button>
                         </div>
                     </div>
         )
