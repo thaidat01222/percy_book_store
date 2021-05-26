@@ -16,7 +16,7 @@ class Login extends Component {
                             <h1 className="login-text">ĐĂNG NHẬP</h1>
                             <input type="username" id="user-input" placeholder="Tên người dùng hoặc địa chỉ email" required></input>
                             <input type="password" id="password-input" placeholder="Mật khẩu" required></input>
-                            <button className="button-login">Đăng Nhập</button>
+                            <Link to="/admin"><button className="button-login">Đăng Nhập</button></Link>
                         </div>
                         <div className="sign-up-in-here">
                             <Link to="/signup" className="sign-up-link">Đăng Ký Nè</Link>

@@ -16,7 +16,7 @@ const collection = [
 class SlideMain extends Component {
     render() {
         return (
-            <div>
+            <div className="slide-main">
                 <Slideshow
                     input={collection}
                     ratio={`3:2`}
