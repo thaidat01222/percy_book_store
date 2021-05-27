@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  width: 1300px;
   margin: 0 auto;
   background-color: #F0F0F0;
 }
@@ -48,15 +48,20 @@ body {
   height: 30px;
 }
 
+.slide-main {
+  margin: 0 auto;
+}
+
 .list-type-of-book{
-  width: 300px;
+  width: 350px;
   font-size: 15px;
   height: 300px;
   margin-right: 10px;
+  margin: 0 auto;
 }
 .list-type-of-book p{
   background-color: #4EA3CE;
-  width: 300px;
+  width: 350px;
   padding: 7px 0 7px 0 ;
   margin: 0 0 15px 0;
   font-size: 22px;
@@ -68,7 +73,7 @@ body {
 }
 .list-type-of-book ul{
   background-color: white;
-  width: 300px;
+  width: 350px;
   padding: 0;
   list-style-type: none ;
 }
@@ -90,7 +95,7 @@ body {
 }
 .list-type-of-book .sub-menu{
   position: absolute;
-  left: 300px;
+  left: 350px;
   top: 0;
   display: none;
 }
@@ -104,6 +109,7 @@ body {
 
 .list-slide{
   display: flex;
+  margin: 0 auto;
 }
 
 code {
@@ -260,4 +266,92 @@ code {
 
 .sign {
   margin: 20px;
+}
+
+.add-book-form {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: white;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.add-book-text {
+  padding: 20px 80px;
+  color: #093952;
+  font-size: 35px;
+}
+
+.add-form-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-input {
+  height: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid #4EA3CE  ;
+  background-color: rgb(241, 241, 241);
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.add-input-tilte {
+  padding: 0px 10px;
+}
+
+#name-of-book {
+  width: 400px;
+}
+
+#author {
+  width: 380px;
+}
+
+#publishing {
+  width: 365px;
+}
+
+#price {
+  width: 150px;
+}
+
+#languages {
+  width: 158px;
+}
+
+#synopsis {
+  width: 890px;
+  height: 150px;
+}
+
+.synopsis {
+  display: flex;
+  align-items: flex-start;
+}
+
+.synopsis-title {
+  padding-top: 2px;
+}
+
+.add-book-button {
+  width: 950px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.add-book-button button {
+  margin: 0 10px;
+  height: 28px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4EA3CE;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: 18px;
 }
