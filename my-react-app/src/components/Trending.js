@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import axios from 'axios';
 
 class Trending extends Component {
@@ -17,19 +18,23 @@ class Trending extends Component {
         console.log("book", this.state)
       })
       .catch(error => console.log(error));
-}
+  }
 
   render() {
     return (
-      <div>
-        <p>Sách Đang Hot</p>
-          {this.state.booktrending.map(item => (
+      <div className="trending-book">
+        <p className="label-menu-book"><center><b>Sách Đang Hot</b></center></p>
+        <div className="books">
+        {this.state.booktrending.map(item => (
+          <Link to={`/book/${item.id}`}><div className="book">
             <li key={item.id}>
-              <h1>{item.nameofbook}</h1>
-              <h2>{item.name}</h2>
-              <h3>{item.author}</h3>
+              <img className="img-book" src={item.image}></img>
+              <h3 className="name-of-book">{item.nameofbook}</h3>
             </li>
-          ))}
+          </div>
+          </Link>
+        ))}
+        </div>
       </div>
     );
   }

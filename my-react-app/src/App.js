@@ -30,8 +30,8 @@ class App extends React.Component {
           <Route exact path="/login" component={Login}/>
           <Route exact path="/signup" component={SignUp}/>
           <Route exact path="/admin" component={AddBook} />
-          <Link to="/book" >Book</Link>
-          <Route exact path="book" component={BookInfor} />
+          <Route exact path="/book/:id?" component={BookInfor}/>
+          <Route exact path="/book/:id?" component={Trending}/>
         </div>
         
       </BrowserRouter>

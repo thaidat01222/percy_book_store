@@ -7,7 +7,7 @@ body {
 
 .header{
   background-color: white;
-  width: 1220px;
+  width: 1275px;
   height: 43px;
   margin: 0 auto;  
   display: flex;
@@ -228,6 +228,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+#email {
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid #4EA3CE  ;
+  border-radius: 3px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
 
 
 #age {
@@ -354,4 +364,85 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
   font-size: 18px;
+}
+
+.books{
+  margin-top: 30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book{
+  height: 300px;
+  width: 234px;
+}
+.name-of-book{
+  margin-top: -15px;
+  text-decoration: none;
+}
+.img-book{
+  height: 190px;
+  width: 190px;
+}
+.label-menu-book {
+  background-color: #77b9da;
+  padding: 7px 0 7px 0 ;
+  margin: 0 0 10px 12px;
+  font-size: 22px;
+  position: relative;
+  bottom: -15px;
+  line-height: 30px;
+  color: white;
+  width: 1275px;  
+}
+.trending-book{
+  margin-top: 30px;
+}
+.label-menu-book-infor{
+  background-color: #1679aa;
+  padding: 7px 0 7px 0 ;
+  margin: 0 0 10px 12px;
+  font-size: 26px;
+  position: relative;
+  bottom: -15px;
+  line-height: 40px;
+  color: white;
+  width: 1275px;  
+}
+.book-infor{
+  width: 1275px;
+  margin-left: 12px;
+  margin-top: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.poster-book{
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.poster-book img{
+  height: 500px;
+  width: 500px;
+  border-right: 2px  solid rgb(207, 201, 201);
+}
+.poster-book button{
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+}
+.book-detail{
+  margin-left: 30px;
+  background-color: white;
+  width: 713px;
+  padding-left: 30px;
+}
+.book-detail p{
+  font-size: 18px;
+}
+.book-detail h1 h2 h3 {
+  margin-left: auto;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

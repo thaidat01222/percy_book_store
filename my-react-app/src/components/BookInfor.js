@@ -1,33 +1,57 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom';
+import Footer from './Footer';
+import Trending from './Trending';
+
 export default class BookInfor extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            nameOfBook: "Đắc nhân tâm",
-            author: "Ai biết",
-            publishing: "Ai biết too",
-            price: "123$",
-            language: "Tiếng Việt",
-            synopsis: "Đây một mùa xuân trăm hoa hé tưng bừng. Đây thời niên thiếu hát ca vang lừng. Khăn quàng đỏ tươi em đeo em mến yêu. Quyết tâm luyện rèn cho mình tiến nhanh...  "
-
+            // nameOfBook: '',
+            // author: '',
+            // price:'',
+            // synopsis:'',
+            // languages:'',
+            // image:''
+            book: {}
         };
+    }
+    componentDidMount = async () => {
+        let id = this.props.match.params.id;
+        axios.get(`http://localhost:4000/book/${id}`)
+            .then(res => {
+                const bookreceive = res.data;
+                this.setState({ book: bookreceive.booksending[0] })
+
+            })
+            .catch(error => console.log(error));
     }
     render() {
         return (
-            <div className="book-inf">
-                <div className="poster-book">
-                    <img src="" />
-                </div>
-                <div className="name-of-book">{this.state.nameOfBook}</div>
-                <div className="" >
-                    <div>Nhà xuất bản: {this.state.publishing}</div>
-                    <div>Tác giả: {this.state.author}</div>
-                    <div>{this.state.price} VNĐ</div>
-                </div>
+            <BrowserRouter>
+                <div >
+                    <p className="label-menu-book-infor"><center><b>Thông Tin Sách</b></center></p>
+                    <div className="book-infor">
+                        <div className="poster-book">
+                            <img src={this.state.book.image} />
+                            <button className="add-to-shoping-cart" onClick={this.handleShopingCart}>Thêm Vào Giỏ Hàng</button>
+                        </div>
+                        <div className="book-detail">
+                            <h1>{this.state.book.nameofbook}</h1>
+                            <h3>Nhà xuất bản: {this.state.book.publishing}</h3>
+                            <h3>Tác giả: {this.state.book.author}</h3>
+                            <h3>Ngôn ngữ: {this.state.book.languages}</h3>
+                            <h2>{this.state.book.price}</h2>
+                            <p> <strong>Tóm tắt <br /></strong> {this.state.book.synopsis}</p>
+                        </div>
+                    </div>
+                    <Footer></Footer>
 
-            </div>
+                </div>
+            </BrowserRouter>
+
         )
     }
 }

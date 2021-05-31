@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
 
 class LastestUpdate extends Component {
@@ -14,6 +15,7 @@ class LastestUpdate extends Component {
         axios.get('http://localhost:4000/api/lastestupdate')
             .then(res => {
                 const bookreceive = res.data;
+                console.log(bookreceive);
                 this.setState({ lastestbook: bookreceive.booksending })
                 console.log("lastestbook")
             })
@@ -22,15 +24,19 @@ class LastestUpdate extends Component {
     render() {
         return (
             <div className="lastestupdate">
-                <p>Sách Mới</p>
+                <p className="label-menu-book"><center><b>Sách Mới</b></center></p>
                 <ul>
-                    {this.state.lastestbook.map(item => (
-                        <li key={item.id}>
-                            <h2>{item.nameofbook}</h2>
-                            <h3>{item.author}</h3>
-                            <p>{item.description}</p>
-                        </li>
-                    ))}
+                    <div className="books">
+                        {this.state.lastestbook.map(item => (
+                            <Link to={`/book/${item.id}`}><div className="book">
+                                <li key={item.id}>
+                                    <img className="img-book" src={item.image} height="300px" width="300px"></img>
+                                    <h3 className="name-of-book">{item.nameofbook}</h3>
+                                </li>
+                            </div>
+                            </Link>
+                        ))}
+                    </div>
                 </ul>
             </div>
         );

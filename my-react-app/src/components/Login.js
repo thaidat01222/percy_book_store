@@ -11,6 +11,7 @@ class Login extends Component {
         this.state = {
             user: '',
             password: '',
+            loggedInStatus: "NOT_LOGGED_IN",
             redirect: false
         };
     }
@@ -31,13 +32,17 @@ class Login extends Component {
             .then(response => {
                 if (response.status == 200) {
                     console.log("da login");
+                    console.log(response.data);
                     this.setState({ redirect: true });
                 }
-                console.log(response);
-                if (response.status == 400) {
-                    alert("Sai Thong Tin Tai Khoan");
-                    console.log("sai thong tin");
+                if(response.status== 401){
+                    alert("Sai thong tin");
                 }
+                // console.log(response);
+                // if (response.status == 401) {
+                //     alert("Sai Thong Tin Tai Khoan");
+                //     console.log("sai thong tin");
+                // }
             })
             .catch(error => {
                 console.log(error);
@@ -52,7 +57,6 @@ class Login extends Component {
             )
         }
         return (
-<<<<<<< HEAD
             <div className="login">
                 <div className="login-form">
                     <h1 className="login-text">ĐĂNG NHẬP</h1>
@@ -65,20 +69,6 @@ class Login extends Component {
                 </div>
             </div>
 
-=======
-                    <div className="login">
-                        <div className="login-form">
-                            <h1 className="login-text">ĐĂNG NHẬP</h1>
-                            <input type="username" id="user-input" placeholder="Tên người dùng hoặc địa chỉ email" required></input>
-                            <input type="password" id="password-input" placeholder="Mật khẩu" required></input>
-                            <Link to="/admin"><button className="button-login">Đăng Nhập</button></Link>
-                        </div>
-                        <div className="sign-up-in-here">
-                            <Link to="/signup" className="sign-up-link">Đăng Ký Nè</Link>
-                        </div>
-                    </div>
-            
->>>>>>> 4d5fa2b5c412dc3bad2ccca734231038d74245eb
 
         )
 
